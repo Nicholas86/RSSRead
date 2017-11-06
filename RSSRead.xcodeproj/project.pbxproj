@@ -1,0 +1,784 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00F27C651FAFFEC900358933 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F27C641FAFFEC900358933 /* AppDelegate.m */; };
+		00F27C681FAFFEC900358933 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F27C671FAFFEC900358933 /* ViewController.m */; };
+		00F27C6B1FAFFEC900358933 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00F27C691FAFFEC900358933 /* Main.storyboard */; };
+		00F27C6D1FAFFEC900358933 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00F27C6C1FAFFEC900358933 /* Assets.xcassets */; };
+		00F27C701FAFFEC900358933 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00F27C6E1FAFFEC900358933 /* LaunchScreen.storyboard */; };
+		00F27C731FAFFEC900358933 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F27C721FAFFEC900358933 /* main.m */; };
+		00F27C7D1FAFFEC900358933 /* RSSReadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F27C7C1FAFFEC900358933 /* RSSReadTests.m */; };
+		00F27C881FAFFEC900358933 /* RSSReadUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F27C871FAFFEC900358933 /* RSSReadUITests.m */; };
+		C46793EF10ACA09D6884EC36 /* Pods_RSSReadUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F49D1C00439236F354A5F6D2 /* Pods_RSSReadUITests.framework */; };
+		CE5EF0B1F67CBE16334F1AB3 /* Pods_RSSRead.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1134F45500395D4922DA4C2B /* Pods_RSSRead.framework */; };
+		D8C83A4AED1088006CBF59C9 /* Pods_RSSReadTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFC1A394F41386B1004F02C7 /* Pods_RSSReadTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00F27C791FAFFEC900358933 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00F27C581FAFFEC900358933 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00F27C5F1FAFFEC900358933;
+			remoteInfo = RSSRead;
+		};
+		00F27C841FAFFEC900358933 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00F27C581FAFFEC900358933 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00F27C5F1FAFFEC900358933;
+			remoteInfo = RSSRead;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00F27C601FAFFEC900358933 /* RSSRead.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSSRead.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		00F27C631FAFFEC900358933 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		00F27C641FAFFEC900358933 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		00F27C661FAFFEC900358933 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		00F27C671FAFFEC900358933 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		00F27C6A1FAFFEC900358933 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		00F27C6C1FAFFEC900358933 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		00F27C6F1FAFFEC900358933 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		00F27C711FAFFEC900358933 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00F27C721FAFFEC900358933 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		00F27C781FAFFEC900358933 /* RSSReadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSSReadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00F27C7C1FAFFEC900358933 /* RSSReadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSSReadTests.m; sourceTree = "<group>"; };
+		00F27C7E1FAFFEC900358933 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00F27C831FAFFEC900358933 /* RSSReadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSSReadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00F27C871FAFFEC900358933 /* RSSReadUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSSReadUITests.m; sourceTree = "<group>"; };
+		00F27C891FAFFEC900358933 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04B0DACD16B0159D04E08E27 /* Pods-RSSRead.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSSRead.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RSSRead/Pods-RSSRead.debug.xcconfig"; sourceTree = "<group>"; };
+		1134F45500395D4922DA4C2B /* Pods_RSSRead.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RSSRead.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		17F791532FB3C15B08D30E17 /* Pods-RSSReadTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSSReadTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RSSReadTests/Pods-RSSReadTests.release.xcconfig"; sourceTree = "<group>"; };
+		68B7F8FAABAAD64D988C0434 /* Pods-RSSReadUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSSReadUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RSSReadUITests/Pods-RSSReadUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8EA8FAC60DAE7D31DCBE52FC /* Pods-RSSReadTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSSReadTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RSSReadTests/Pods-RSSReadTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A596276D3BC4A14CDF7613B1 /* Pods-RSSRead.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSSRead.release.xcconfig"; path = "Pods/Target Support Files/Pods-RSSRead/Pods-RSSRead.release.xcconfig"; sourceTree = "<group>"; };
+		BACD23DD684B45587EE896F2 /* Pods-RSSReadUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSSReadUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RSSReadUITests/Pods-RSSReadUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F49D1C00439236F354A5F6D2 /* Pods_RSSReadUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RSSReadUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFC1A394F41386B1004F02C7 /* Pods_RSSReadTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RSSReadTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00F27C5D1FAFFEC900358933 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE5EF0B1F67CBE16334F1AB3 /* Pods_RSSRead.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00F27C751FAFFEC900358933 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8C83A4AED1088006CBF59C9 /* Pods_RSSReadTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00F27C801FAFFEC900358933 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C46793EF10ACA09D6884EC36 /* Pods_RSSReadUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00F27C571FAFFEC900358933 = {
+			isa = PBXGroup;
+			children = (
+				00F27C621FAFFEC900358933 /* RSSRead */,
+				00F27C7B1FAFFEC900358933 /* RSSReadTests */,
+				00F27C861FAFFEC900358933 /* RSSReadUITests */,
+				00F27C611FAFFEC900358933 /* Products */,
+				4F4193A6419225BC72C9F566 /* Pods */,
+				E29B457D29A52EAEF242BA86 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		00F27C611FAFFEC900358933 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00F27C601FAFFEC900358933 /* RSSRead.app */,
+				00F27C781FAFFEC900358933 /* RSSReadTests.xctest */,
+				00F27C831FAFFEC900358933 /* RSSReadUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00F27C621FAFFEC900358933 /* RSSRead */ = {
+			isa = PBXGroup;
+			children = (
+				00F27C631FAFFEC900358933 /* AppDelegate.h */,
+				00F27C641FAFFEC900358933 /* AppDelegate.m */,
+				00F27C661FAFFEC900358933 /* ViewController.h */,
+				00F27C671FAFFEC900358933 /* ViewController.m */,
+				00F27C691FAFFEC900358933 /* Main.storyboard */,
+				00F27C6C1FAFFEC900358933 /* Assets.xcassets */,
+				00F27C6E1FAFFEC900358933 /* LaunchScreen.storyboard */,
+				00F27C711FAFFEC900358933 /* Info.plist */,
+				00F27C721FAFFEC900358933 /* main.m */,
+			);
+			path = RSSRead;
+			sourceTree = "<group>";
+		};
+		00F27C7B1FAFFEC900358933 /* RSSReadTests */ = {
+			isa = PBXGroup;
+			children = (
+				00F27C7C1FAFFEC900358933 /* RSSReadTests.m */,
+				00F27C7E1FAFFEC900358933 /* Info.plist */,
+			);
+			path = RSSReadTests;
+			sourceTree = "<group>";
+		};
+		00F27C861FAFFEC900358933 /* RSSReadUITests */ = {
+			isa = PBXGroup;
+			children = (
+				00F27C871FAFFEC900358933 /* RSSReadUITests.m */,
+				00F27C891FAFFEC900358933 /* Info.plist */,
+			);
+			path = RSSReadUITests;
+			sourceTree = "<group>";
+		};
+		4F4193A6419225BC72C9F566 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				04B0DACD16B0159D04E08E27 /* Pods-RSSRead.debug.xcconfig */,
+				A596276D3BC4A14CDF7613B1 /* Pods-RSSRead.release.xcconfig */,
+				8EA8FAC60DAE7D31DCBE52FC /* Pods-RSSReadTests.debug.xcconfig */,
+				17F791532FB3C15B08D30E17 /* Pods-RSSReadTests.release.xcconfig */,
+				68B7F8FAABAAD64D988C0434 /* Pods-RSSReadUITests.debug.xcconfig */,
+				BACD23DD684B45587EE896F2 /* Pods-RSSReadUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E29B457D29A52EAEF242BA86 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1134F45500395D4922DA4C2B /* Pods_RSSRead.framework */,
+				FFC1A394F41386B1004F02C7 /* Pods_RSSReadTests.framework */,
+				F49D1C00439236F354A5F6D2 /* Pods_RSSReadUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00F27C5F1FAFFEC900358933 /* RSSRead */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00F27C8C1FAFFEC900358933 /* Build configuration list for PBXNativeTarget "RSSRead" */;
+			buildPhases = (
+				9D7FD48386FB8F048C65B878 /* [CP] Check Pods Manifest.lock */,
+				00F27C5C1FAFFEC900358933 /* Sources */,
+				00F27C5D1FAFFEC900358933 /* Frameworks */,
+				00F27C5E1FAFFEC900358933 /* Resources */,
+				995A8C84E83C9DAC77345B1C /* [CP] Embed Pods Frameworks */,
+				C834AE7BA43A0173EB1F7C72 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RSSRead;
+			productName = RSSRead;
+			productReference = 00F27C601FAFFEC900358933 /* RSSRead.app */;
+			productType = "com.apple.product-type.application";
+		};
+		00F27C771FAFFEC900358933 /* RSSReadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00F27C8F1FAFFEC900358933 /* Build configuration list for PBXNativeTarget "RSSReadTests" */;
+			buildPhases = (
+				5502814BB2E7D48247DAF95D /* [CP] Check Pods Manifest.lock */,
+				00F27C741FAFFEC900358933 /* Sources */,
+				00F27C751FAFFEC900358933 /* Frameworks */,
+				00F27C761FAFFEC900358933 /* Resources */,
+				398BDA74AE0E8B874166D826 /* [CP] Embed Pods Frameworks */,
+				6D649429033294DA71FEDA63 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00F27C7A1FAFFEC900358933 /* PBXTargetDependency */,
+			);
+			name = RSSReadTests;
+			productName = RSSReadTests;
+			productReference = 00F27C781FAFFEC900358933 /* RSSReadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		00F27C821FAFFEC900358933 /* RSSReadUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00F27C921FAFFEC900358933 /* Build configuration list for PBXNativeTarget "RSSReadUITests" */;
+			buildPhases = (
+				7B0CDFDA6E6730EF45C7C481 /* [CP] Check Pods Manifest.lock */,
+				00F27C7F1FAFFEC900358933 /* Sources */,
+				00F27C801FAFFEC900358933 /* Frameworks */,
+				00F27C811FAFFEC900358933 /* Resources */,
+				D7ADBF4834EFBAF21D71E5D6 /* [CP] Embed Pods Frameworks */,
+				B633D7A804D0A68B59D352EA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00F27C851FAFFEC900358933 /* PBXTargetDependency */,
+			);
+			name = RSSReadUITests;
+			productName = RSSReadUITests;
+			productReference = 00F27C831FAFFEC900358933 /* RSSReadUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00F27C581FAFFEC900358933 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Nicholas_锋";
+				TargetAttributes = {
+					00F27C5F1FAFFEC900358933 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					00F27C771FAFFEC900358933 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 00F27C5F1FAFFEC900358933;
+					};
+					00F27C821FAFFEC900358933 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 00F27C5F1FAFFEC900358933;
+					};
+				};
+			};
+			buildConfigurationList = 00F27C5B1FAFFEC900358933 /* Build configuration list for PBXProject "RSSRead" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 00F27C571FAFFEC900358933;
+			productRefGroup = 00F27C611FAFFEC900358933 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00F27C5F1FAFFEC900358933 /* RSSRead */,
+				00F27C771FAFFEC900358933 /* RSSReadTests */,
+				00F27C821FAFFEC900358933 /* RSSReadUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00F27C5E1FAFFEC900358933 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00F27C701FAFFEC900358933 /* LaunchScreen.storyboard in Resources */,
+				00F27C6D1FAFFEC900358933 /* Assets.xcassets in Resources */,
+				00F27C6B1FAFFEC900358933 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00F27C761FAFFEC900358933 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00F27C811FAFFEC900358933 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		398BDA74AE0E8B874166D826 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RSSReadTests/Pods-RSSReadTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5502814BB2E7D48247DAF95D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RSSReadTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D649429033294DA71FEDA63 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RSSReadTests/Pods-RSSReadTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B0CDFDA6E6730EF45C7C481 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RSSReadUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		995A8C84E83C9DAC77345B1C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RSSRead/Pods-RSSRead-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/DTCoreText/DTCoreText.framework",
+				"${BUILT_PRODUCTS_DIR}/DTFoundation/DTFoundation.framework",
+				"${BUILT_PRODUCTS_DIR}/FDFullscreenPopGesture/FDFullscreenPopGesture.framework",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/Ono/Ono.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DTCoreText.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DTFoundation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FDFullscreenPopGesture.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Ono.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RSSRead/Pods-RSSRead-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D7FD48386FB8F048C65B878 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RSSRead-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B633D7A804D0A68B59D352EA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RSSReadUITests/Pods-RSSReadUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C834AE7BA43A0173EB1F7C72 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RSSRead/Pods-RSSRead-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7ADBF4834EFBAF21D71E5D6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RSSReadUITests/Pods-RSSReadUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00F27C5C1FAFFEC900358933 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00F27C681FAFFEC900358933 /* ViewController.m in Sources */,
+				00F27C731FAFFEC900358933 /* main.m in Sources */,
+				00F27C651FAFFEC900358933 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00F27C741FAFFEC900358933 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00F27C7D1FAFFEC900358933 /* RSSReadTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00F27C7F1FAFFEC900358933 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00F27C881FAFFEC900358933 /* RSSReadUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00F27C7A1FAFFEC900358933 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00F27C5F1FAFFEC900358933 /* RSSRead */;
+			targetProxy = 00F27C791FAFFEC900358933 /* PBXContainerItemProxy */;
+		};
+		00F27C851FAFFEC900358933 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00F27C5F1FAFFEC900358933 /* RSSRead */;
+			targetProxy = 00F27C841FAFFEC900358933 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		00F27C691FAFFEC900358933 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00F27C6A1FAFFEC900358933 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		00F27C6E1FAFFEC900358933 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00F27C6F1FAFFEC900358933 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00F27C8A1FAFFEC900358933 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		00F27C8B1FAFFEC900358933 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		00F27C8D1FAFFEC900358933 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04B0DACD16B0159D04E08E27 /* Pods-RSSRead.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WK6R7V524D;
+				INFOPLIST_FILE = RSSRead/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Nicholas.RSSRead;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		00F27C8E1FAFFEC900358933 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A596276D3BC4A14CDF7613B1 /* Pods-RSSRead.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WK6R7V524D;
+				INFOPLIST_FILE = RSSRead/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Nicholas.RSSRead;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		00F27C901FAFFEC900358933 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EA8FAC60DAE7D31DCBE52FC /* Pods-RSSReadTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WK6R7V524D;
+				INFOPLIST_FILE = RSSReadTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Nicholas.RSSReadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RSSRead.app/RSSRead";
+			};
+			name = Debug;
+		};
+		00F27C911FAFFEC900358933 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17F791532FB3C15B08D30E17 /* Pods-RSSReadTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WK6R7V524D;
+				INFOPLIST_FILE = RSSReadTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Nicholas.RSSReadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RSSRead.app/RSSRead";
+			};
+			name = Release;
+		};
+		00F27C931FAFFEC900358933 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68B7F8FAABAAD64D988C0434 /* Pods-RSSReadUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WK6R7V524D;
+				INFOPLIST_FILE = RSSReadUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Nicholas.RSSReadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RSSRead;
+			};
+			name = Debug;
+		};
+		00F27C941FAFFEC900358933 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BACD23DD684B45587EE896F2 /* Pods-RSSReadUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WK6R7V524D;
+				INFOPLIST_FILE = RSSReadUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Nicholas.RSSReadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RSSRead;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00F27C5B1FAFFEC900358933 /* Build configuration list for PBXProject "RSSRead" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00F27C8A1FAFFEC900358933 /* Debug */,
+				00F27C8B1FAFFEC900358933 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00F27C8C1FAFFEC900358933 /* Build configuration list for PBXNativeTarget "RSSRead" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00F27C8D1FAFFEC900358933 /* Debug */,
+				00F27C8E1FAFFEC900358933 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00F27C8F1FAFFEC900358933 /* Build configuration list for PBXNativeTarget "RSSReadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00F27C901FAFFEC900358933 /* Debug */,
+				00F27C911FAFFEC900358933 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00F27C921FAFFEC900358933 /* Build configuration list for PBXNativeTarget "RSSReadUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00F27C931FAFFEC900358933 /* Debug */,
+				00F27C941FAFFEC900358933 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 00F27C581FAFFEC900358933 /* Project object */;
+}
