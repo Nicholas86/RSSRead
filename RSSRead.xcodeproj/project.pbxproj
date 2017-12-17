@@ -15,6 +15,12 @@
 		00F27C731FAFFEC900358933 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F27C721FAFFEC900358933 /* main.m */; };
 		00F27C7D1FAFFEC900358933 /* RSSReadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F27C7C1FAFFEC900358933 /* RSSReadTests.m */; };
 		00F27C881FAFFEC900358933 /* RSSReadUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F27C871FAFFEC900358933 /* RSSReadUITests.m */; };
+		00F27CA31FB07E3B00358933 /* SMFeedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F27CA21FB07E3B00358933 /* SMFeedModel.m */; };
+		00F27CA61FB0800B00358933 /* SMDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F27CA51FB0800B00358933 /* SMDB.m */; };
+		00FFF3131FE644BA00A85CD9 /* SMFeedViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FFF3121FE644BA00A85CD9 /* SMFeedViewModel.m */; };
+		00FFF3161FE6451000A85CD9 /* SMNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FFF3151FE6451000A85CD9 /* SMNetManager.m */; };
+		00FFF3191FE6542100A85CD9 /* SMFeedStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FFF3181FE6542100A85CD9 /* SMFeedStore.m */; };
+		00FFF31C1FE6545B00A85CD9 /* SMFeedItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FFF31B1FE6545B00A85CD9 /* SMFeedItemModel.m */; };
 		C46793EF10ACA09D6884EC36 /* Pods_RSSReadUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F49D1C00439236F354A5F6D2 /* Pods_RSSReadUITests.framework */; };
 		CE5EF0B1F67CBE16334F1AB3 /* Pods_RSSRead.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1134F45500395D4922DA4C2B /* Pods_RSSRead.framework */; };
 		D8C83A4AED1088006CBF59C9 /* Pods_RSSReadTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFC1A394F41386B1004F02C7 /* Pods_RSSReadTests.framework */; };
@@ -54,6 +60,18 @@
 		00F27C831FAFFEC900358933 /* RSSReadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSSReadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00F27C871FAFFEC900358933 /* RSSReadUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSSReadUITests.m; sourceTree = "<group>"; };
 		00F27C891FAFFEC900358933 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00F27CA11FB07E3B00358933 /* SMFeedModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMFeedModel.h; sourceTree = "<group>"; };
+		00F27CA21FB07E3B00358933 /* SMFeedModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMFeedModel.m; sourceTree = "<group>"; };
+		00F27CA41FB0800B00358933 /* SMDB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMDB.h; sourceTree = "<group>"; };
+		00F27CA51FB0800B00358933 /* SMDB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMDB.m; sourceTree = "<group>"; };
+		00FFF3111FE644BA00A85CD9 /* SMFeedViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMFeedViewModel.h; sourceTree = "<group>"; };
+		00FFF3121FE644BA00A85CD9 /* SMFeedViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMFeedViewModel.m; sourceTree = "<group>"; };
+		00FFF3141FE6451000A85CD9 /* SMNetManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMNetManager.h; sourceTree = "<group>"; };
+		00FFF3151FE6451000A85CD9 /* SMNetManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMNetManager.m; sourceTree = "<group>"; };
+		00FFF3171FE6542000A85CD9 /* SMFeedStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMFeedStore.h; sourceTree = "<group>"; };
+		00FFF3181FE6542100A85CD9 /* SMFeedStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMFeedStore.m; sourceTree = "<group>"; };
+		00FFF31A1FE6545B00A85CD9 /* SMFeedItemModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMFeedItemModel.h; sourceTree = "<group>"; };
+		00FFF31B1FE6545B00A85CD9 /* SMFeedItemModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMFeedItemModel.m; sourceTree = "<group>"; };
 		04B0DACD16B0159D04E08E27 /* Pods-RSSRead.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSSRead.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RSSRead/Pods-RSSRead.debug.xcconfig"; sourceTree = "<group>"; };
 		1134F45500395D4922DA4C2B /* Pods_RSSRead.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RSSRead.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		17F791532FB3C15B08D30E17 /* Pods-RSSReadTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSSReadTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RSSReadTests/Pods-RSSReadTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -122,6 +140,18 @@
 				00F27C641FAFFEC900358933 /* AppDelegate.m */,
 				00F27C661FAFFEC900358933 /* ViewController.h */,
 				00F27C671FAFFEC900358933 /* ViewController.m */,
+				00F27CA11FB07E3B00358933 /* SMFeedModel.h */,
+				00F27CA21FB07E3B00358933 /* SMFeedModel.m */,
+				00FFF31A1FE6545B00A85CD9 /* SMFeedItemModel.h */,
+				00FFF31B1FE6545B00A85CD9 /* SMFeedItemModel.m */,
+				00FFF3111FE644BA00A85CD9 /* SMFeedViewModel.h */,
+				00FFF3121FE644BA00A85CD9 /* SMFeedViewModel.m */,
+				00FFF3141FE6451000A85CD9 /* SMNetManager.h */,
+				00FFF3151FE6451000A85CD9 /* SMNetManager.m */,
+				00F27CA41FB0800B00358933 /* SMDB.h */,
+				00F27CA51FB0800B00358933 /* SMDB.m */,
+				00FFF3171FE6542000A85CD9 /* SMFeedStore.h */,
+				00FFF3181FE6542100A85CD9 /* SMFeedStore.m */,
 				00F27C691FAFFEC900358933 /* Main.storyboard */,
 				00F27C6C1FAFFEC900358933 /* Assets.xcassets */,
 				00F27C6E1FAFFEC900358933 /* LaunchScreen.storyboard */,
@@ -484,9 +514,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00FFF3131FE644BA00A85CD9 /* SMFeedViewModel.m in Sources */,
+				00FFF3191FE6542100A85CD9 /* SMFeedStore.m in Sources */,
+				00F27CA61FB0800B00358933 /* SMDB.m in Sources */,
 				00F27C681FAFFEC900358933 /* ViewController.m in Sources */,
+				00F27CA31FB07E3B00358933 /* SMFeedModel.m in Sources */,
+				00FFF3161FE6451000A85CD9 /* SMNetManager.m in Sources */,
 				00F27C731FAFFEC900358933 /* main.m in Sources */,
 				00F27C651FAFFEC900358933 /* AppDelegate.m in Sources */,
+				00FFF31C1FE6545B00A85CD9 /* SMFeedItemModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
