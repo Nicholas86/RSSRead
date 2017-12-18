@@ -56,6 +56,9 @@ static NSString *rootViewControllerIdentifier = @"SMRootViewControllerCell";
     // Do any additional setup after loading the view, typically from a nib.
     NSLog(@"首页标题");
     
+    
+    [self.view   addSubview:self.tableView];
+    
     //成功回调
     [self.viewModel  setBlockWithSuccessBlock:^(int i) {
         
