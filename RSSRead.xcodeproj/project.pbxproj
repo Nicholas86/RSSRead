@@ -111,6 +111,85 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0055719B1FE74E8100AE77F2 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				005571A21FE74EB900AE77F2 /* FMDB */,
+				0055719C1FE74E8100AE77F2 /* AppDelegate */,
+				0055719D1FE74E8100AE77F2 /* Model */,
+				0055719E1FE74E8100AE77F2 /* Network */,
+				0055719F1FE74E8100AE77F2 /* View */,
+				005571A01FE74E8100AE77F2 /* ViewController */,
+				005571A11FE74E8100AE77F2 /* ViewModel */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		0055719C1FE74E8100AE77F2 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				00F27C631FAFFEC900358933 /* AppDelegate.h */,
+				00F27C641FAFFEC900358933 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		0055719D1FE74E8100AE77F2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				00F27CA11FB07E3B00358933 /* SMFeedModel.h */,
+				00F27CA21FB07E3B00358933 /* SMFeedModel.m */,
+				00FFF31A1FE6545B00A85CD9 /* SMFeedItemModel.h */,
+				00FFF31B1FE6545B00A85CD9 /* SMFeedItemModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0055719E1FE74E8100AE77F2 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				00FFF3141FE6451000A85CD9 /* SMNetManager.h */,
+				00FFF3151FE6451000A85CD9 /* SMNetManager.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		0055719F1FE74E8100AE77F2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		005571A01FE74E8100AE77F2 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				00F27C661FAFFEC900358933 /* ViewController.h */,
+				00F27C671FAFFEC900358933 /* ViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		005571A11FE74E8100AE77F2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				00FFF3111FE644BA00A85CD9 /* SMFeedViewModel.h */,
+				00FFF3121FE644BA00A85CD9 /* SMFeedViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		005571A21FE74EB900AE77F2 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				00F27CA41FB0800B00358933 /* SMDB.h */,
+				00F27CA51FB0800B00358933 /* SMDB.m */,
+				00FFF3171FE6542000A85CD9 /* SMFeedStore.h */,
+				00FFF3181FE6542100A85CD9 /* SMFeedStore.m */,
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
 		00F27C571FAFFEC900358933 = {
 			isa = PBXGroup;
 			children = (
@@ -136,22 +215,7 @@
 		00F27C621FAFFEC900358933 /* RSSRead */ = {
 			isa = PBXGroup;
 			children = (
-				00F27C631FAFFEC900358933 /* AppDelegate.h */,
-				00F27C641FAFFEC900358933 /* AppDelegate.m */,
-				00F27C661FAFFEC900358933 /* ViewController.h */,
-				00F27C671FAFFEC900358933 /* ViewController.m */,
-				00F27CA11FB07E3B00358933 /* SMFeedModel.h */,
-				00F27CA21FB07E3B00358933 /* SMFeedModel.m */,
-				00FFF31A1FE6545B00A85CD9 /* SMFeedItemModel.h */,
-				00FFF31B1FE6545B00A85CD9 /* SMFeedItemModel.m */,
-				00FFF3111FE644BA00A85CD9 /* SMFeedViewModel.h */,
-				00FFF3121FE644BA00A85CD9 /* SMFeedViewModel.m */,
-				00FFF3141FE6451000A85CD9 /* SMNetManager.h */,
-				00FFF3151FE6451000A85CD9 /* SMNetManager.m */,
-				00F27CA41FB0800B00358933 /* SMDB.h */,
-				00F27CA51FB0800B00358933 /* SMDB.m */,
-				00FFF3171FE6542000A85CD9 /* SMFeedStore.h */,
-				00FFF3181FE6542100A85CD9 /* SMFeedStore.m */,
+				0055719B1FE74E8100AE77F2 /* Class */,
 				00F27C691FAFFEC900358933 /* Main.storyboard */,
 				00F27C6C1FAFFEC900358933 /* Assets.xcassets */,
 				00F27C6E1FAFFEC900358933 /* LaunchScreen.storyboard */,
