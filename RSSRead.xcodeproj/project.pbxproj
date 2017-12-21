@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00DD257F1FEB815800206B60 /* SMLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DD257E1FEB815800206B60 /* SMLabel.m */; };
+		00DD25831FEB819800206B60 /* SMStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DD25821FEB819800206B60 /* SMStyle.m */; };
+		00DD25861FEB825600206B60 /* SMTitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DD25851FEB825600206B60 /* SMTitleLabel.m */; };
+		00DD25891FEB838800206B60 /* SMContentLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DD25881FEB838800206B60 /* SMContentLabel.m */; };
+		00DD258C1FEB841000206B60 /* SMSubContentLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DD258B1FEB841000206B60 /* SMSubContentLabel.m */; };
+		00DD258F1FEB84A900206B60 /* UIColor-Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DD258D1FEB84A900206B60 /* UIColor-Expanded.m */; };
+		00DD25931FEBADAE00206B60 /* SMFeedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DD25921FEBADAE00206B60 /* SMFeedTableViewCell.m */; };
 		00F27C651FAFFEC900358933 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F27C641FAFFEC900358933 /* AppDelegate.m */; };
 		00F27C681FAFFEC900358933 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F27C671FAFFEC900358933 /* ViewController.m */; };
 		00F27C6B1FAFFEC900358933 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00F27C691FAFFEC900358933 /* Main.storyboard */; };
@@ -44,6 +51,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00DD257D1FEB815800206B60 /* SMLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMLabel.h; sourceTree = "<group>"; };
+		00DD257E1FEB815800206B60 /* SMLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMLabel.m; sourceTree = "<group>"; };
+		00DD25811FEB819800206B60 /* SMStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMStyle.h; sourceTree = "<group>"; };
+		00DD25821FEB819800206B60 /* SMStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMStyle.m; sourceTree = "<group>"; };
+		00DD25841FEB825600206B60 /* SMTitleLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMTitleLabel.h; sourceTree = "<group>"; };
+		00DD25851FEB825600206B60 /* SMTitleLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMTitleLabel.m; sourceTree = "<group>"; };
+		00DD25871FEB838800206B60 /* SMContentLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMContentLabel.h; sourceTree = "<group>"; };
+		00DD25881FEB838800206B60 /* SMContentLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMContentLabel.m; sourceTree = "<group>"; };
+		00DD258A1FEB841000206B60 /* SMSubContentLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMSubContentLabel.h; sourceTree = "<group>"; };
+		00DD258B1FEB841000206B60 /* SMSubContentLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMSubContentLabel.m; sourceTree = "<group>"; };
+		00DD258D1FEB84A900206B60 /* UIColor-Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor-Expanded.m"; sourceTree = "<group>"; };
+		00DD258E1FEB84A900206B60 /* UIColor-Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor-Expanded.h"; sourceTree = "<group>"; };
+		00DD25911FEBADAE00206B60 /* SMFeedTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMFeedTableViewCell.h; sourceTree = "<group>"; };
+		00DD25921FEBADAE00206B60 /* SMFeedTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMFeedTableViewCell.m; sourceTree = "<group>"; };
 		00F27C601FAFFEC900358933 /* RSSRead.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSSRead.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00F27C631FAFFEC900358933 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		00F27C641FAFFEC900358933 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -114,6 +135,7 @@
 		0055719B1FE74E8100AE77F2 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				00DD25801FEB818E00206B60 /* Tools */,
 				005571A21FE74EB900AE77F2 /* FMDB */,
 				0055719C1FE74E8100AE77F2 /* AppDelegate */,
 				0055719D1FE74E8100AE77F2 /* Model */,
@@ -157,6 +179,8 @@
 		0055719F1FE74E8100AE77F2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				00DD25901FEBAD9500206B60 /* UITableViewCell */,
+				00DD257A1FEB812300206B60 /* UILabel */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -188,6 +212,41 @@
 				00FFF3181FE6542100A85CD9 /* SMFeedStore.m */,
 			);
 			path = FMDB;
+			sourceTree = "<group>";
+		};
+		00DD257A1FEB812300206B60 /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				00DD257D1FEB815800206B60 /* SMLabel.h */,
+				00DD257E1FEB815800206B60 /* SMLabel.m */,
+				00DD25841FEB825600206B60 /* SMTitleLabel.h */,
+				00DD25851FEB825600206B60 /* SMTitleLabel.m */,
+				00DD25871FEB838800206B60 /* SMContentLabel.h */,
+				00DD25881FEB838800206B60 /* SMContentLabel.m */,
+				00DD258A1FEB841000206B60 /* SMSubContentLabel.h */,
+				00DD258B1FEB841000206B60 /* SMSubContentLabel.m */,
+			);
+			path = UILabel;
+			sourceTree = "<group>";
+		};
+		00DD25801FEB818E00206B60 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				00DD258E1FEB84A900206B60 /* UIColor-Expanded.h */,
+				00DD258D1FEB84A900206B60 /* UIColor-Expanded.m */,
+				00DD25811FEB819800206B60 /* SMStyle.h */,
+				00DD25821FEB819800206B60 /* SMStyle.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		00DD25901FEBAD9500206B60 /* UITableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				00DD25911FEBADAE00206B60 /* SMFeedTableViewCell.h */,
+				00DD25921FEBADAE00206B60 /* SMFeedTableViewCell.m */,
+			);
+			path = UITableViewCell;
 			sourceTree = "<group>";
 		};
 		00F27C571FAFFEC900358933 = {
@@ -580,10 +639,17 @@
 			files = (
 				00FFF3131FE644BA00A85CD9 /* SMFeedViewModel.m in Sources */,
 				00FFF3191FE6542100A85CD9 /* SMFeedStore.m in Sources */,
+				00DD25891FEB838800206B60 /* SMContentLabel.m in Sources */,
+				00DD257F1FEB815800206B60 /* SMLabel.m in Sources */,
+				00DD25831FEB819800206B60 /* SMStyle.m in Sources */,
+				00DD258C1FEB841000206B60 /* SMSubContentLabel.m in Sources */,
 				00F27CA61FB0800B00358933 /* SMDB.m in Sources */,
+				00DD25931FEBADAE00206B60 /* SMFeedTableViewCell.m in Sources */,
 				00F27C681FAFFEC900358933 /* ViewController.m in Sources */,
 				00F27CA31FB07E3B00358933 /* SMFeedModel.m in Sources */,
+				00DD25861FEB825600206B60 /* SMTitleLabel.m in Sources */,
 				00FFF3161FE6451000A85CD9 /* SMNetManager.m in Sources */,
+				00DD258F1FEB84A900206B60 /* UIColor-Expanded.m in Sources */,
 				00F27C731FAFFEC900358933 /* main.m in Sources */,
 				00F27C651FAFFEC900358933 /* AppDelegate.m in Sources */,
 				00FFF31C1FE6545B00A85CD9 /* SMFeedItemModel.m in Sources */,

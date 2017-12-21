@@ -11,6 +11,8 @@
 #import "SMFeedItemModel.h"
 
 @interface SMFeedStore : NSObject
+
+
 //数据转feed的model
 - (SMFeedModel *)updateFeedModelWithData:(NSData *)feedData preModel:(SMFeedModel *)preModel;
 

@@ -53,11 +53,13 @@
 }
 
 //传入交互的block回调
-- (void)setBlockWithSuccessBlock:(SuccessBlock)successBlock
-                 WithFailueBlock:(FailureBlock)failueBlock
+- (void)setBlockWithSuccessBlock: (SuccessBlock)successBlock
+                     failueBlock: (FailureBlock)failueBlock
+                     finishBlock: (FinishBlock)finishBlock
 {
     _successBlock = successBlock;
     _failureBlock = failueBlock;
+    _finishBlock = finishBlock;
 }
 
 #pragma mark 抓取数据
@@ -97,10 +99,12 @@
             //开启异步子线程
             dispatch_async(fetchFeedQueue, ^{
                 //解析feed,xml格式
+                //将外面传进来的数据源(model的某些字段)解析,并通过self.feeds[i] 替换。
                 self.feeds[i] = [self.feedStore   updateFeedModelWithData:responseObject preModel:feedModel];
                 //入库存储
                 SMDB *db = [SMDB  shareInstance];
                 //接收(插入本地数据库并返回id)
+                //此时self.feeds[i]中的model某些字段已处理过.
                 int fid = [db  insertWithFeedModel:self.feeds[i]];
                 SMFeedModel *model = (SMFeedModel *)self.feeds[i];
                 model.fid = fid;
@@ -108,10 +112,11 @@
                     NSString *fidString = [NSString  stringWithFormat:@"%d",fid];
                     db.feedIcons[fidString] = model.imageUrl;
                 }
+                
+                //插入本地数据库成功后,将下标返回
+                _successBlock(i, model);//block下标
                 //通知单个完成
                 dispatch_group_leave(group);
-                //插入本地数据库成功后,将下标返回
-                _successBlock(i);//block下标
             });
             
             
@@ -125,16 +130,19 @@
                 int fid = [db  insertWithFeedModel:self.feeds[i]];
                 SMFeedModel *model = (SMFeedModel *)self.feeds[i];
                 model.fid = fid;
-                //通知单个完成
-                dispatch_group_leave(group);
+               
                 //插入本地数据库成功后,将下标返回
                 _failureBlock(error);//block下标
+                //通知单个完成
+                dispatch_group_leave(group);
             });//end dispatch async
         }];
     }//end for
+    
     //全完成后执行事件
     dispatch_group_notify(group, dispatch_get_main_queue(), ^{
         NSLog(@"主线程刷新");
+        _finishBlock(YES);
     });
 }
 

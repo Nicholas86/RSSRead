@@ -7,9 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+@class SMFeedModel;
 
-typedef void(^SuccessBlock)(int i);
+typedef void(^SuccessBlock)(int i, SMFeedModel *model);
 typedef void(^FailureBlock)(NSError *error);
+typedef void(^FinishBlock)(BOOL isFinish);
+
 
 @interface SMFeedViewModel : NSObject
 
@@ -28,15 +31,21 @@ typedef void(^FailureBlock)(NSError *error);
 //失败回调
 @property (nonatomic, copy) FailureBlock failureBlock;
 
+//抓取所有数据完成
+@property (nonatomic, copy) FinishBlock finishBlock;
+
+
 // 传入交互的Block块
 - (void)setBlockWithSuccessBlock: (SuccessBlock)successBlock
-                 WithFailueBlock: (FailureBlock)failueBlock;
+                     failueBlock: (FailureBlock)failueBlock
+                     finishBlock: (FinishBlock)failueBlock;
 
 //抓取数据
 - (void)fetchAllFeedWithModelArray:(NSMutableArray *)modelArray;
 
 //是否WiFi
 + (BOOL)isWifi;
+
 @end
 
 

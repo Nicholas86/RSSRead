@@ -132,7 +132,38 @@
     return 0;
 }
 
-
+//本地读取首页订阅源数据
+- (NSMutableArray *)selectAllFeeds {
+    FMDatabase *db = [FMDatabase databaseWithPath:self.feedDBPath];
+    if ([db open]) {
+        FMResultSet *rs = [db executeQuery:@"select * from feeds where ishide = ? order by updatetime desc",@(0)];
+        NSUInteger count = 0;
+        NSMutableArray *feedsArray = [NSMutableArray array];
+        while ([rs next]) {
+            SMFeedModel *feedModel = [[SMFeedModel alloc] init];
+            feedModel.fid = [rs intForColumn:@"fid"];
+            feedModel.title = [rs stringForColumn:@"title"];
+            feedModel.link = [rs stringForColumn:@"link"];
+            feedModel.des = [rs stringForColumn:@"des"];
+            feedModel.copyright = [rs stringForColumn:@"copyright"];
+            feedModel.generator = [rs stringForColumn:@"generator"];
+            feedModel.imageUrl = [rs stringForColumn:@"imageurl"];
+            feedModel.feedUrl = [rs stringForColumn:@"feedurl"];
+            feedModel.unReadCount = [rs intForColumn:@"unread"];
+            [feedsArray addObject:feedModel];
+            count++;
+            //feedicons
+            if (feedModel.imageUrl.length > 0) {
+                NSString *fidStr = [NSString stringWithFormat:@"%lu",(unsigned long)feedModel.fid];
+                self.feedIcons[fidStr] = feedModel.imageUrl;
+            }
+        }
+        [db close];
+        return feedsArray;
+    }
+    
+    return nil;
+}
 
 @end
 

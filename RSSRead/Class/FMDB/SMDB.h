@@ -15,10 +15,10 @@
 #define PATH_OF_TEMP        NSTemporaryDirectory()
 #define PATH_OF_DOCUMENT    [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]
 
-
 @interface SMDB : NSObject
 @property (nonatomic, strong) NSMutableDictionary *feedIcons;
 
 + (SMDB *)shareInstance;
 - (int)insertWithFeedModel:(SMFeedModel *)feedModel; //插入feed内容,并返回id
+- (NSMutableArray *)selectAllFeeds; //读取所有feeds
 @end
