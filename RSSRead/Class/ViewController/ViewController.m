@@ -13,6 +13,7 @@
 #import "SMDB.h"
 #import "SMFeedStore.h"
 #import <MJRefresh/MJRefresh.h>
+#import "SMFeedTableViewCell.h"
 
 static NSString *rootViewControllerIdentifier = @"SMRootViewControllerCell";
 
@@ -101,7 +102,7 @@ static NSString *rootViewControllerIdentifier = @"SMRootViewControllerCell";
     // Do any additional setup after loading the view, typically from a nib.
     
     //添加到根视图上
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:rootViewControllerIdentifier];
+    [self.tableView registerClass:[SMFeedTableViewCell class] forCellReuseIdentifier:rootViewControllerIdentifier];
     [self.view   addSubview:self.tableView];
     
     //headerLabel添加到headerView上
@@ -209,18 +210,14 @@ static NSString *rootViewControllerIdentifier = @"SMRootViewControllerCell";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:rootViewControllerIdentifier];
+    SMFeedTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:rootViewControllerIdentifier];
     
     if (self.feeds.count == 0) {
         return cell;
     }
-    cell.backgroundColor = [UIColor clearColor];
-    cell.selectionStyle = UITableViewCellSelectionStyleDefault;
-    cell.contentView.backgroundColor = [UIColor clearColor];
-    
     SMFeedModel *model = self.feeds[indexPath.row];
-    cell.textLabel.text = model.title;
-    
+    cell.model = model;
+    [cell  draw];
     return cell;
 }
 

@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+@class SMFeedModel;
 
 @interface SMFeedTableViewCell : UITableViewCell
+
+//绘制
+- (void)draw;
+
+//赋值
+@property (nonatomic, strong) SMFeedModel *model;
+
 
 @end
