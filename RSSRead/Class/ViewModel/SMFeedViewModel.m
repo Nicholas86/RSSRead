@@ -65,8 +65,13 @@
 #pragma mark 抓取数据
 - (void)fetchAllFeedWithModelArray:(NSMutableArray *)modelArray
 {
-    //创建并行队列
+    /*
+    //创建并行队列（第一种方式）
     dispatch_queue_t  fetchFeedQueue = dispatch_queue_create("com.starming.fetchfeed.fetchfeed", DISPATCH_QUEUE_CONCURRENT);
+     */
+    
+    //获取并行队列 (第二种方式）
+     dispatch_queue_t  fetchFeedQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     //创建全局队列组
     dispatch_group_t group = dispatch_group_create();
     
@@ -79,6 +84,62 @@
         //进入全局队列组
         dispatch_group_enter(group);
         
+        //开启子线程,异步。添加到队列、组里面(第二种方式）
+        dispatch_group_async(group, fetchFeedQueue, ^{
+            //从数组取出model
+            SMFeedModel *feedModel = modelArray[i];
+            feedModel.isSync = NO;
+            
+            NSLog(@"feedUrl=%@, title=%@", feedModel.feedUrl, feedModel.title);
+            //GET请求
+            [netManager  GET:feedModel.feedUrl parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+                //成功回调 (第二种方式）
+                
+                /*
+                NSLog(@"responseObject=%@", responseObject);
+                NSString *xmlString = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
+                NSLog(@"Data: %@", xmlString);
+                NSLog(@"%@",feedModel);
+                */
+                
+                //解析feed,xml格式
+                //将外面传进来的数据源(model的某些字段)解析,并通过self.feeds[i] 替换。
+                self.feeds[i] = [self.feedStore   updateFeedModelWithData:responseObject preModel:feedModel];
+                //入库存储
+                SMDB *db = [SMDB  shareInstance];
+                //接收(插入本地数据库并返回id)
+                //此时self.feeds[i]中的model某些字段已处理过.
+                int fid = [db  insertWithFeedModel:self.feeds[i]];
+                SMFeedModel *model = (SMFeedModel *)self.feeds[i];
+                model.fid = fid;
+                if (model.imageUrl.length > 0) {
+                    NSString *fidString = [NSString  stringWithFormat:@"%d",fid];
+                    db.feedIcons[fidString] = model.imageUrl;
+                }
+                
+                //插入本地数据库成功后,将下标返回
+                _successBlock(i, model);//block下标
+                //通知单个完成
+                dispatch_group_leave(group);
+                
+            } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+                //失败回调 (第二种方式）
+                NSLog(@"Error: %@", error);
+                //入库存储
+                SMDB *db = [SMDB  shareInstance];
+                //接收(插入本地数据库并返回id)
+                int fid = [db  insertWithFeedModel:self.feeds[i]];
+                SMFeedModel *model = (SMFeedModel *)self.feeds[i];
+                model.fid = fid;
+                
+                //插入本地数据库成功后,将下标返回
+                _failureBlock(error);//block下标
+                //通知单个完成
+                dispatch_group_leave(group);
+            }];
+        });
+        
+        /*
         //从数组取出model
         SMFeedModel *feedModel = modelArray[i];
         feedModel.isSync = NO;
@@ -88,15 +149,14 @@
         [netManager  GET:feedModel.feedUrl parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
             //成功回调
             
-            /*
+         
             NSLog(@"responseObject=%@", responseObject);
             NSString *xmlString = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
             NSLog(@"Data: %@", xmlString);
             NSLog(@"%@",feedModel);
-             */
+         
             
-            
-            //开启异步子线程
+            //开启异步子线程（第一种方式）
             dispatch_async(fetchFeedQueue, ^{
                 //解析feed,xml格式
                 //将外面传进来的数据源(model的某些字段)解析,并通过self.feeds[i] 替换。
@@ -121,7 +181,7 @@
             
             
         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-            //失败回调
+            //失败回调（第一种方式）
             NSLog(@"Error: %@", error);
             dispatch_async(fetchFeedQueue, ^{
                 //入库存储
@@ -137,8 +197,10 @@
                 dispatch_group_leave(group);
             });//end dispatch async
         }];
+         */
     }//end for
-    
+
+
     //全完成后执行事件
     dispatch_group_notify(group, dispatch_get_main_queue(), ^{
         NSLog(@"主线程刷新");

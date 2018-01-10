@@ -38,7 +38,7 @@ typedef void(^FinishBlock)(BOOL isFinish);
 // 传入交互的Block块
 - (void)setBlockWithSuccessBlock: (SuccessBlock)successBlock
                      failueBlock: (FailureBlock)failueBlock
-                     finishBlock: (FinishBlock)failueBlock;
+                     finishBlock: (FinishBlock)finishBlock;
 
 //抓取数据
 - (void)fetchAllFeedWithModelArray:(NSMutableArray *)modelArray;
