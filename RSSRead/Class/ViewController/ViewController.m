@@ -125,6 +125,20 @@ static NSString *rootViewControllerIdentifier = @"SMRootViewControllerCell";
 
     //2.获取网络数据
        //2.1---回调
+    [self   configureViewModel];
+       //2.2---开始获取
+    [self   fetchAllFeeds];
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+
+//回调
+- (void)configureViewModel
+{
     __block typeof(self) weakSelf = self;
     
     self.fetchingCount = 0;
@@ -140,7 +154,7 @@ static NSString *rootViewControllerIdentifier = @"SMRootViewControllerCell";
             weakSelf.tbHeaderLabel.text = [NSString  stringWithFormat:@"正在获取%@...%ld/%ld",model.title, weakSelf.fetchingCount, weakSelf.feeds.count];
             model.isSync = YES;
             
-             //将外面的 self.feeds数组中的数据,根据指定下标替换
+            //将外面的 self.feeds数组中的数据,根据指定下标替换
             weakSelf.feeds[i] = model;
             NSLog(@"成功回调:%d", i);
             [weakSelf.tableView reloadData];
@@ -148,11 +162,11 @@ static NSString *rootViewControllerIdentifier = @"SMRootViewControllerCell";
         
     } failueBlock:^(NSError *error) {
         NSLog(@"失败:%@", error);
-
+        
     } finishBlock:^(BOOL isFinish) {
         NSLog(@"全部完成:%d", isFinish);
         
-          //全部抓取完成
+        //全部抓取完成
         
         //关闭网络指示器
         [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
@@ -171,16 +185,7 @@ static NSString *rootViewControllerIdentifier = @"SMRootViewControllerCell";
         });
         
     }];
-    
-       //2.2---开始获取
-    [self   fetchAllFeeds];
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 
 #pragma mark 抓取数据
 - (void)fetchAllFeeds
